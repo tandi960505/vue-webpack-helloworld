@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div id="app">
+            <h2>{{my_text}}</h2>
+            <button @click="my_text += 1">增加1</button><br>
+            <!-- 双向绑定 -->
+            输入：<input type="number" v-model:value="my_text" /><br>
+            <!-- 单向绑定 -->
+            输入：<input type="number" v-bind:value="my_text" /><br>
+            <!-- 单向绑定简写 -->
+            输入：<input type="number" :value="my_text" /><br>
+        </di>
+    </body>
+</html>
+
+<!-- 导入vue -->
+<script src="https://unpkg.com/vue"></script>
+<!-- js脚本 -->
+<script>
+
+    // 模拟后端返回的json数据
+    objs = [{name:'tandi',age:'23'}, {name:'zhangsan',age:'18'}]
+
+    // 创建一个vue对象,构造参数是一个json
+    const app = new Vue({
+        // 将当前这个vue对象挂载到id为app的标签上
+        el: '#app',
+        data: {
+            my_text: 10
+        }
+    });
+</script>
+
