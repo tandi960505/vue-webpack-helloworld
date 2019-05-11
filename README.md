@@ -4,6 +4,11 @@
 3. 平时做做例子验证，可能有用
 4. 在这个瞬息万变的行业，我自己认为应该秉持着一种虚心谦卑的态度，保持学习和了解新事物是最基本的事情
 
+## 说明
+1. 本文章只对webpack和vue作基本的介绍
+2. 文章源码位于[https://github.com/tandi960505/webpack-helloworld](https://github.com/tandi960505/webpack-helloworld)
+
+
 ## Node.js
 ### 安装node
 [Node.js下载地址](https://nodejs.org/zh-cn/)
